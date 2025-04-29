@@ -1,0 +1,67 @@
+# integrating react frontend with the Django backend   [Frontend already exists]
+
+Create a separate folder for backend
+1. Create a folder named backend [mkdir movie_bluff_backend, cd movie_bluff_backend]
+
+2. Create a virtual environment [python -m venv venv]
+
+3. Activate the virtual environment [source venv/bin/activate]
+
+4. If you Know the required packages install them. Installed DRF [pip install django djangorestframework, ]
+
+5. Start working on creating a new project [django-admin startproject movie_bluff .]  -> creates a project in folder
+
+6. Create an API folder [python manage.py startapp users ] -> [you're building a RESTful API for your React frontend for signup/login]
+    
+    This users app will hold all logic related to:
+        Defining models (data)
+        Writing views (API logic)
+        Serializing data
+        Creating API endpoints
+    ]
+
+7. Update settings.py including all the installed apps
+
+8. Add this to settings.py  
+
+    Before that install "pip install django-cors-headers" 
+
+    [ CORS_ALLOW_ALL_ORIGINS = True ]     ->   this is to enable the connection to the backend if frontend requests it.
+
+    By default browsers block cross-origin HTTP requests for security reasons. So it allows your React app to communicate with your Django API.
+
+
+TASK 1: [Providing  login + registration]
+    
+	STEPS:
+	1.  Establish the database connection [ using the existing sqllite]
+	2.  Didn't create any models as we are using default sqlite [if wanted customized table create the model]
+	3. Create a super user
+	4. 
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+	react:
+            Login/signup -> if clicked login should redirect to database -> perform validation check -> response back to the user
+					-> if signing up -> redirect the data into the database check if already exists , or not -> response the desired 
+						output info [ if exists tell already exists else store the data into the database and redirect to login]
+				
+
+				1. Create the database [required table ] in the database
+				2. Establish the connection [change data saving from local storage to database table]
+					
+
+
+
+    
