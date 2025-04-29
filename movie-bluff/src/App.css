@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.signup-container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+.login-username {
+  padding: auto;
+  width: auto;
+  border-radius: 5px;
+}
+.login-password{
+  padding: auto;
+  width: auto;
+  border-radius: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #040404;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #333;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.plot {
+    align-items: center;
+    grid-row: 2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(248, 248, 248, 0.1);
+    margin: 50px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-grid {
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  padding-bottom: 80px;
+  background-color: #f8f8f8;
+}
+
+/* Movie Card */
+.movie-card {
+  display: grid;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* overflow: hidden; */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 90px;
+  cursor: pointer;
+  min-width: fit-content; 
+  min-height: fit-content;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Movie Poster */
+.movie-poster {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Movie Title */
+.movie-card h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Movie Details */
+.movie-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Star Rating */
+.movie-card p svg {
+  color: gold;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.results-info {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.movie-card {
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-color: #444;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

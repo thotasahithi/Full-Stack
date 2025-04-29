@@ -1,0 +1,114 @@
+/* Main container */
+.trending-container {
+    padding: 40px;
+    background: white;
+    text-align: left;
+    border-radius: 10px;
+    display: contents;
+  }
+  
+  /* Title styling */
+  .trending-title {
+    font-size: 20px;
+    padding-left: 20px;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Scrollable movie grid (right to left) */
+  .trending-movie-grid {
+    display: flex;
+    flex-direction: row; 
+    gap: 15px;
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+    padding-bottom: 60px;
+  }
+  
+  /* Hide scrollbar */
+  .trending-movie-grid::-webkit-scrollbar {
+    display:flex;
+  }
+  
+  /* Movie card styling */
+  .trending-movie-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-width: fit-content; 
+    min-height: fit-content;
+  }
+  
+  /* Hover effect */
+  .trending-movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Movie poster */
+  .trending-movie-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+ /* Movie title */
+.trending-movie-title {
+  font-size: 18px;
+  color: black;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+/* Enlarge only the title on hover */
+.trending-movie-card:hover {
+  transform: scale(1.05);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+  
+  /* Movie release year */
+  .trending-movie-year {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Rating */
+  .trending-rating {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Popularity */
+  .trending-popularity {
+    color: #ff5733;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Error message */
+  .trending-error {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Loading message */
+  .trending-loading {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+  }
+  

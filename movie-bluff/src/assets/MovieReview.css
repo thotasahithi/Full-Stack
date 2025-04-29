@@ -1,0 +1,78 @@
+/* src/assets/MovieReview.css */
+
+.movie-reviews {
+  max-width: 800px;
+  margin: 20px auto;
+  /* padding: 20px; */
+  font-family: Arial, sans-serif;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  color: #d32f2f;
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.no-reviews {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.reviews-list {
+  list-style: none;
+  padding: 0;
+}
+
+.review-item {
+  border:  상승px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.review-author {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: black;
+}
+
+.review-content {
+  margin: 0 0 10px 0;
+  color: #555;
+  max-height: 4em; /* Truncated by default */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.review-content.expanded {
+  max-height: none; /* Full height when expanded */
+}
+
+.read-more {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.read-more:hover {
+  background-color:red;
+}

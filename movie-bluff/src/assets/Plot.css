@@ -1,0 +1,66 @@
+.plot h1{
+  color:black;
+  font-size: larger;
+  font-weight: bold;
+  line-height: 1.8;
+  align-items: flex-start;
+  justify-content:flex-start;
+}
+.movie-container {
+  display: flex;
+  max-height:50%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+  height:80%;
+  color: #fff;
+}
+
+.movie-image{
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  size-adjust: auto;
+  justify-content: left;
+}
+.movie-image img::before{
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 50%);
+}
+
+.movie-details {
+  align-content:end;
+  padding: 40px;
+  max-width: 600px;
+}
+
+.movie-title {
+  margin-bottom: 20px;
+  color: black;
+}
+.movie-title {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.8;
+  align-items: flex-start;
+  justify-content:flex-start;
+}
+
+.movie-overview {
+  color: black;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  align-items: flex-start;
+  justify-content:flex-start;
+}
+.movie-overview h2{
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.8;
+  align-items: flex-start;
+  justify-content:flex-start;
+}

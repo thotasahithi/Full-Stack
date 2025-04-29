@@ -1,0 +1,109 @@
+/* Main container */
+.upcoming-container {
+    padding: 40px;
+    background: white;
+    text-align: left;
+    border-radius: 10px;
+    display: contents;
+  }
+  
+  /* Title styling */
+  .upcoming-title {
+    font-size: 20px;
+    padding-left: 20px;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Scrollable movie grid (right to left) */
+  .upcoming-movie-grid {
+    display: flex;
+    flex-direction: row; 
+    gap: 15px;
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+    padding-bottom: 60px;
+    min-width: fit-content; 
+    min-height: fit-content;
+  }
+  
+  /* Hide scrollbar */
+  .upcoming-movie-grid::-webkit-scrollbar {
+    display:flex;
+  }
+  
+  /* Movie card styling */
+  .upcoming-movie-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-width: fit-content; 
+    min-height: fit-content; /* Ensures horizontal alignment */
+  }
+  
+  /* Movie poster */
+  .upcoming-movie-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* Movie release year */
+  .upcoming-movie-year {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Rating */
+  .upcoming-rating {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Popularity */
+  .upcoming-popularity {
+    color: #ff5733;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Error message */
+  .upcoming-error {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Loading message */
+  .upcoming-loading {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+  }
+
+   /* Movie title */
+.upcoming-movie-title {
+  font-size: 18px;
+  color: black;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+/* Enlarge only the title on hover */
+.upcoming-movie-card:hover {
+  transform: scale(1.05);
+  font-size: 18px;
+  font-weight: bold;
+}
+  
